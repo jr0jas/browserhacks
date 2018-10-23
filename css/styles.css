@@ -1,0 +1,28 @@
+.browserhacks-link {
+	font-weight: 700;
+}
+
+/*
+ * Chrome * hack
+ */
+@supports (-webkit-appearance:none) {
+	.browserhacks-link {
+		color: #E4717A;
+	}
+}
+
+/*
+ * FireFox * hack 
+ */
+_:-moz-tree-row(hover), .browserhacks-link {
+	color: #265505;
+}
+
+/*
+ * Internet Explorer/Edge ≥ 10 hack
+ */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.browserhacks-link {
+		color: #274BA7;
+	}
+}
